@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".Activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        >
+
+      <ImageView
+          android:id="@+id/main_iv_add"
+          android:layout_width="60dp"
+          android:layout_height="match_parent"
+          android:src="@mipmap/add"
+          />
+
+        <ImageView
+            android:id="@+id/main_iv_search"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/search"
+            android:layout_alignParentRight="true"
+            />
+        
+        <LinearLayout
+            android:id="@+id/main_point_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            >
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+
+        android:id="@+id/main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_bottom_layout"
+        >
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

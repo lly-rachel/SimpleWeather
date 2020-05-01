@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+ >
+
+    <RelativeLayout
+        android:id="@+id/delete_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/delete_city_no"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/close"
+
+            />
+
+        <ImageView
+            android:id="@+id/delete_city_sure"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sure"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑城市"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/delete_city_list"
+        android:layout_below="@+id/city_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        ></ListView>
+
+</LinearLayout>
